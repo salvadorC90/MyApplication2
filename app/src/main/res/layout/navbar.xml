@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:background="#003366"
     android:orientation="horizontal"
-    app:layout_constraintBottom_creator="1"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent">
 
+    <TextView
+        android:id="@+id/store"
+        style="@style/buttons"
+        android:text="Store" />
 
-</android.support.constraint.ConstraintLayout>
+    <View style="@style/border" />
+
+    <TextView
+        android:id="@+id/browse"
+        style="@style/buttons"
+        android:text="Browse" />
+
+    <View style="@style/border" />
+
+    <TextView
+        android:id="@+id/library"
+        style="@style/buttons"
+        android:text="Library" />
+
+    <View style="@style/border" />
+
+    <TextView
+        android:id="@+id/radio"
+        style="@style/buttons"
+        android:text="Radio" />
+</LinearLayout>
+
