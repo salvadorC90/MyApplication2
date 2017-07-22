@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="view songs for purchase"/>
+        android:text="view songs for purchase using paypal API intergrated into the build.gradle(module app) "/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

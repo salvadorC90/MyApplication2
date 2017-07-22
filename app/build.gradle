@@ -29,4 +29,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.braintreepayments.api:braintree:2.5.4'
     compile 'com.braintreepayments.api:drop-in:3.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
 }
