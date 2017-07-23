@@ -11,10 +11,10 @@ import static com.paypal.android.sdk.onetouch.core.metadata.ah.I;
 
 public class NavBar extends AppCompatActivity implements View.OnClickListener {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+
+    protected void onCreate(Bundle savedInstanceState, int layout) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.navbar);
+        setContentView(layout);
 
         TextView library = (TextView) findViewById(R.id.library);
         library.setOnClickListener(this);

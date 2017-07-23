@@ -7,12 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 /**
  * Created by Roy on 7/17/2017.
  */
-public class LibraryActivity extends AppCompatActivity {
+public class LibraryActivity extends NavBar {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.library);
+        super.onCreate(savedInstanceState, R.layout.library);
 
     }
 }

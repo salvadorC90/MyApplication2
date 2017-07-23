@@ -6,8 +6,8 @@
     android:background="#003366"
     android:orientation="horizontal"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent">
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
 
     <TextView
         android:id="@+id/store"
