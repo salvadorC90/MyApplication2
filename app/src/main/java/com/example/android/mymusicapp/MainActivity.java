@@ -33,21 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Class navigation;
 
-        if (v.getId() == R.id.library) {
-            navigation = LibraryActivity.class;
-        } else if (v.getId() == R.id.browse) {
-            navigation = BrowseActivity.class;
-        } else if (v.getId() == R.id.radio) {
-            navigation = RadioActivity.class;
-        } else if (v.getId() == R.id.store) {
-            navigation = PaymentsActivity.class;
-        } else {
-            return;
-        }
-
-        Intent newActivity = new Intent(this, navigation);
-        startActivity(newActivity);
-
         switch (v.getId()) {
 
             case R.id.library:
@@ -66,7 +51,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 navigation = PaymentsActivity.class;
                 break;
 
+            default:
+                return;
         }
 
+        Intent newActivity = new Intent(this, navigation);
+        startActivity(newActivity);
+
     }
+
 }
