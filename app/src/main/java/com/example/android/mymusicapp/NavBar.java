@@ -9,13 +9,12 @@ import android.widget.TextView;
 import static com.paypal.android.sdk.onetouch.core.metadata.ah.I;
 
 
-public class Nav extends AppCompatActivity implements View.OnClickListener {
+public class NavBar extends AppCompatActivity implements View.OnClickListener {
 
-
-
-    public void onClick(View v) {
-
-        Class navigation;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.navbar);
 
         TextView library = (TextView) findViewById(R.id.library);
         library.setOnClickListener(this);
@@ -28,6 +27,13 @@ public class Nav extends AppCompatActivity implements View.OnClickListener {
 
         TextView store = (TextView) findViewById(R.id.store);
         store.setOnClickListener(this);
+    }
+
+
+    public void onClick(View v) {
+
+        Class navigation;
+
 
         switch (v.getId()) {
 
